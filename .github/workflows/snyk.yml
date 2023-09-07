@@ -16,6 +16,8 @@ name: Snyk
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ add-snyk-action ]
   schedule:
     - cron: '0 0 * * 0' # each Sunday at 12:00 AM UTC
 
